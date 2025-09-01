@@ -78,3 +78,19 @@ elif Opcion == 2:
     print(Nombre.lower())
 else:
     print(Nombre.capitalize())
+#Actividad 9
+print("Ahora me dirá una magnitud de un terremoto y yo se lo clasificaré")
+Magnitud = float(input("Ingrese la magnitud del terremoto: "))
+if Magnitud < 3:
+    print("es un terremoto muy leve")
+elif Magnitud < 4:
+    print("es un terremoto leve")
+elif Magnitud < 5:
+    print("es un terremoto moderado")
+elif Magnitud < 6:
+    print("es un terremoto fuerte")
+elif Magnitud < 7:
+    print("es un terremoto muy fuerte")
+else:
+    print("es un terremoto extremo")
+#Actividad 10
