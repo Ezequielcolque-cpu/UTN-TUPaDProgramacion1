@@ -67,4 +67,14 @@ if Frase.endswith(("a","e","i","o","u")):
     Frase= Frase + "!"
     print(Frase)
 else:
-    print(False)
+    print(Frase)
+#Actividad 8
+Nombre = input("Ingrese su nombre: ")
+print("A continuacion tendra que selecionar una de las 3 opciones, la primera pondrá su nombre en mayúsculas, la segunda pondrá su nomnbre en minúsculass y la tercera solo pondrá la primera letra en mayúscula")
+Opcion = int(input("Ingrese la opcion (1/2/3)"))
+if Opcion == 1:
+    print(Nombre.upper())
+elif Opcion == 2:
+    print(Nombre.lower())
+else:
+    print(Nombre.capitalize())
