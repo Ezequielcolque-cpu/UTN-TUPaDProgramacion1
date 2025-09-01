@@ -15,7 +15,7 @@ else :
 #Actividad 2
 print("Ahora veremos si quedas aprobado o no")
 Nota = float (input("Ingrese su nota: "))
-RedondeoR = (input("Desea aplicar redondeos? (Si/No)")).strip().lower()
+RedondeoR = (input("Desea aplicar redondeos? (Si/No) ")).strip().lower()
 Verdadero = (RedondeoR == "si")
 if Verdadero:
     Redondeado = round(Nota)
@@ -28,3 +28,13 @@ else:
         print(f"Usted esta Desaprobado, su nota fue de {Nota}")
     else:
         print(f"Usted esta Aprobado, su nota fue de {Nota}")
+#Actividad 3
+Num1 = int(input("Ingrese un numero par: "))
+while True:
+    if Num1 % 2 == 0:
+        print("Ha ingresado un numero par")
+        break
+    else:
+        print(f"Por favor, ingrese un numero par, {Num1} no es par")
+    Num1 = int(input("Ingrese un numero par: "))
+#Actividad 5
