@@ -1,4 +1,6 @@
 import math
+import random
+from statistics import mode, median, mean
 print ("Hola")
 #Activida 1 y 4
 Edad = int (input ("Me podrías decir tu edad por favor "))
@@ -44,5 +46,18 @@ while True:
         print("Ha ingresado una contraseña correcta")
         break
     else:
-        print(f"Por favor, ingrese una contraseña de entre 8 a 14 caracteres, su contraseña solo tiene {len(Clave)} caracteres")
+        print(f"Por favor, ingrese una contraseña de entre 8 a 14 caracteres, su contraseña tiene {len(Clave)} caracteres")
     Clave = int(input("Ingrese una contraseña (8-14 caracteres) "))
+#Actividad 6
+print("Ahora determinaremos el sesgo de 50 numeros aleatorios")
+Numeros_aleatorios = [random.randint (1, 100) for i in range (50)]
+print(f"Los numeros son {Numeros_aleatorios}")
+Media = mean(Numeros_aleatorios)
+Mediana = median(Numeros_aleatorios)
+Moda = mode(Numeros_aleatorios)
+if Media > Mediana and Mediana > Moda:
+    print(f"El sesgo es positivo, su media es de {Media}, su mediana es de {Mediana} y su moda de {Moda}")
+elif Media < Mediana and Mediana < Moda:
+    print(f"El sesgo es negativo, su media es de {Media}, su mediana es de {Mediana} y su moda de {Moda}")
+else:
+    print(f"No tiene sesgo, su media es de {Media}, su mediana es de {Mediana} y su moda de {Moda}")
