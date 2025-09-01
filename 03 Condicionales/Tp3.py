@@ -61,3 +61,10 @@ elif Media < Mediana and Mediana < Moda:
     print(f"El sesgo es negativo, su media es de {Media}, su mediana es de {Mediana} y su moda de {Moda}")
 else:
     print(f"No tiene sesgo, su media es de {Media}, su mediana es de {Mediana} y su moda de {Moda}")
+#Actividad 7
+Frase = input("Ahora ingrese una palabra o frase: ").lower()
+if Frase.endswith(("a","e","i","o","u")):
+    Frase= Frase + "!"
+    print(Frase)
+else:
+    print(False)
