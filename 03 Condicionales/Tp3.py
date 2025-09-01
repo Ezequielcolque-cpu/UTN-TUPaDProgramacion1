@@ -94,3 +94,25 @@ elif Magnitud < 7:
 else:
     print("es un terremoto extremo")
 #Actividad 10
+print("Ahora te dire tu estacíon segun tu fecha y hemisferio")
+Hemisferio = input("¿Es que hemisferio se encuentrá? (norte o sur) (N/S)").strip().upper()
+Mes = int(input("Ingrese el mes (en numeros): "))
+Dia = int(input("Ingrese el día (en numeros): "))
+if (Mes == 12 and Dia >= 21) or Mes in (1, 2) or (Mes == 3 and Dia <= 20):
+    EN = "Invierno"
+    ES = "Verano"
+elif(Mes == 3 and Dia >= 21) or Mes in (4, 5) or (Mes == 6 and Dia <= 20):
+    EN = "Primavera"
+    ES = "Otoño"
+elif(Mes == 6 and Dia >= 21) or Mes in (7, 8) or (Mes == 9 and Dia <= 20):
+    EN = "Verano"
+    ES = "Invierno"
+else:
+    EN = "Otoño"
+    ES = "Primavera"
+if Hemisferio == "N":
+    print(f"En el hemisferio norte es {EN}")
+elif Hemisferio == "S":
+    print(f"En el hemisferio sur es {ES}")
+else:
+    print("Hemisferio no encontrado, use N o S para referirce a los hemiferios")
