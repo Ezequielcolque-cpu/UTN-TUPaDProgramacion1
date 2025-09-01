@@ -20,9 +20,9 @@ Verdadero = (RedondeoR == "si")
 if Verdadero:
     Redondeado = round(Nota)
     if Redondeado < 6:
-        print(f"Usted esta Desaprobado, su nota fue de {Redondeado}")
+        print(f"Usted esta Desaprobado, su nota fue de {Redondeado} redondeado")
     else:
-        print(f"Usted esta Aprobado, su nota fue de {Redondeado}")
+        print(f"Usted esta Aprobado, su nota fue de {Redondeado} redondeado")
 else:
     if Nota < 6:
         print(f"Usted esta Desaprobado, su nota fue de {Nota}")
