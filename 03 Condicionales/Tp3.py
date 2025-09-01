@@ -38,3 +38,11 @@ while True:
         print(f"Por favor, ingrese un numero par, {Num1} no es par")
     Num1 = int(input("Ingrese un numero par: "))
 #Actividad 5
+Clave = input("Ingrese una contraseña (8-14 caracteres) ")
+while True:
+    if len(Clave) >= 8 and len(Clave) <= 14:
+        print("Ha ingresado una contraseña correcta")
+        break
+    else:
+        print(f"Por favor, ingrese una contraseña de entre 8 a 14 caracteres, su contraseña solo tiene {len(Clave)} caracteres")
+    Clave = int(input("Ingrese una contraseña (8-14 caracteres) "))
