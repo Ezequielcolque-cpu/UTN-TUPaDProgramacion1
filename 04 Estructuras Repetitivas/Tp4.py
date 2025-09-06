@@ -5,6 +5,7 @@ ContI = 0
 for ContI in range (1,101):
     print(ContI, end=", ")
 #Actividad 2
+print("")
 num = int(input("Ingrese un numero mayor de dos digitos preferiblemente: "))
 n = abs(num) #el abs es por si ponen un numero negativo, lo convierte en positio
 numC = 0
@@ -45,7 +46,7 @@ while Num != 0:
 print(f"El resultado de la suma de los numeros ingresados es de {resul}")
 #Actividad 5
 print("Ahora debera de tratar de adininar el numero.")
-intentos = 0
+intentos = 1
 Num = random.randint(0,9)
 num = int(input("Ingrese el numero:"))
 while num != Num:
@@ -57,12 +58,12 @@ ContI = 0
 for ContI in range (100,-1,-2):
     print(ContI, end= ", ")
 #Actividad 7
+print("")
 num = 0
 num = int(input("Ingrese un numero para determinar el rango de la suma: "))
-lim2 = num -1
 x = 0
 resul = 0
-for x in range(0, lim2, 1):
+for x in range(0, num, 1):
     x += 1
     resul += x
 print(f"la suma de los numeros dentro del rango es de {resul}")
