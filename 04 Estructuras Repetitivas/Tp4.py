@@ -35,4 +35,10 @@ elif num > num1:
     print(f"la suma de los numeros dentro del rango es de {resul}")
 else:
     print("No se puede realizar la suma de los numeros del rango determinado, ya que ambos son el mismo o no cumple con la condición necesaria")
-#
+#Actividad 4
+resul = 0
+Num = int(input("Ingrese un numero entero en la suma: "))
+while Num != 0:
+    resul = resul + Num
+    Num = int(input("Ingrese un numero entero en la suma: "))
+print(f"El resultado de la suma de los numeros ingresados es de {resul}")
