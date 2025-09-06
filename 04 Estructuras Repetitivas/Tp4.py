@@ -84,3 +84,12 @@ for x in range(10):
     else:
         impar = impar +1
 print(f"De los numeros escritos {pos} son positivos, {neg} son negativos, de esos {par} son pares y {impar} son impares")
+#Actividad 9
+numC = 10
+x = 0
+suma = 0
+for x in range(numC):
+    num = float(input("Ingrese el numero: "))
+    suma = suma + num
+Media = suma / numC
+print(f"La media de los numero es de {Media}")
