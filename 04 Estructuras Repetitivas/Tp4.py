@@ -1,3 +1,4 @@
+import random
 print("Hola Mundo")
 #Actividad 1
 ContI = 0
@@ -42,3 +43,12 @@ while Num != 0:
     resul = resul + Num
     Num = int(input("Ingrese un numero entero en la suma: "))
 print(f"El resultado de la suma de los numeros ingresados es de {resul}")
+#Actividad 5
+print("Ahora debera de tratar de adininar el numero.")
+intentos = 0
+Num = random.randint(0,9)
+num = int(input("Ingrese el numero:"))
+while num != Num:
+    intentos += 1
+    num = int(input("Ingrese el numero:"))
+print(f"Adivino el numero en {intentos} intentos")
