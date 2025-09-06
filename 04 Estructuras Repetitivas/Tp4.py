@@ -67,3 +67,20 @@ for x in range(0, num, 1):
     x += 1
     resul += x
 print(f"la suma de los numeros dentro del rango es de {resul}")
+#Actividad 8
+x =0
+pos = 0
+neg = 0
+par = 0
+impar = 0
+for x in range(10):
+    num = int(input("Ingrese el numero entero: "))
+    if num > 0:
+        pos = pos +1
+    else:
+        neg = neg +1
+    if num % 2 == 0:
+        par = par +1
+    else:
+        impar = impar +1
+print(f"De los numeros escritos {pos} son positivos, {neg} son negativos, de esos {par} son pares y {impar} son impares")
