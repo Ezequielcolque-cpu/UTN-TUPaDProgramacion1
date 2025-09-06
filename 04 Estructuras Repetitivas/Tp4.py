@@ -17,17 +17,19 @@ num = int(input("Ingrese un numero para determinar el rango de la suma: "))
 num1 = int(input("Ingrese un numero para determinar el final del rango de la suma: "))
 if num < num1:
     lim1 = num + 1
+    lim2 = num1 -1
     x = lim1
     resul = lim1
-    for x in range(lim1, num1, 1):
+    for x in range(lim1, lim2, 1):
         x += 1
         resul += x
     print(f"la suma de los numeros dentro del rango es de {resul}")
 elif num > num1:
     lim1 = num -1
+    lim2 = num1 + 1
     x = lim1
     resul = lim1
-    for x in range(lim1, num1,-1):
+    for x in range(lim1, lim2,-1):
         x -= 1
         resul += x
     print(f"la suma de los numeros dentro del rango es de {resul}")
