@@ -73,7 +73,7 @@ pos = 0
 neg = 0
 par = 0
 impar = 0
-for x in range(10):
+for x in range(100):
     num = int(input("Ingrese el numero entero: "))
     if num > 0:
         pos = pos +1
@@ -85,7 +85,7 @@ for x in range(10):
         impar = impar +1
 print(f"De los numeros escritos {pos} son positivos, {neg} son negativos, de esos {par} son pares y {impar} son impares")
 #Actividad 9
-numC = 10
+numC = 100
 x = 0
 suma = 0
 for x in range(numC):
@@ -93,3 +93,9 @@ for x in range(numC):
     suma = suma + num
 Media = suma / numC
 print(f"La media de los numero es de {Media}")
+#Actividad 10
+num = input("Ingrese  un numero")
+Invert = ""
+for dig in num:
+    Invert = dig + Invert
+print (f"Numero invertido es {Invert}")
