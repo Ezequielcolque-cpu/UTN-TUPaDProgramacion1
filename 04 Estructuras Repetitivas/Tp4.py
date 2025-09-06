@@ -52,3 +52,7 @@ while num != Num:
     intentos += 1
     num = int(input("Ingrese el numero:"))
 print(f"Adivino el numero en {intentos} intentos")
+#Actividad 6
+ContI = 0
+for ContI in range (100,-1,-2):
+    print(ContI)
