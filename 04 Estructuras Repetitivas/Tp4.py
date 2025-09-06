@@ -3,7 +3,7 @@ print("Hola Mundo")
 #Actividad 1
 ContI = 0
 for ContI in range (1,101):
-    print(ContI)
+    print(ContI, end=", ")
 #Actividad 2
 num = int(input("Ingrese un numero mayor de dos digitos preferiblemente: "))
 n = abs(num) #el abs es por si ponen un numero negativo, lo convierte en positio
@@ -55,4 +55,14 @@ print(f"Adivino el numero en {intentos} intentos")
 #Actividad 6
 ContI = 0
 for ContI in range (100,-1,-2):
-    print(ContI)
+    print(ContI, end= ", ")
+#Actividad 7
+num = 0
+num = int(input("Ingrese un numero para determinar el rango de la suma: "))
+lim2 = num -1
+x = 0
+resul = 0
+for x in range(0, lim2, 1):
+    x += 1
+    resul += x
+print(f"la suma de los numeros dentro del rango es de {resul}")
