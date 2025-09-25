@@ -78,12 +78,10 @@ for j in range(3):
 
 #Actividad 9
 tablero = [["-" for _ in range(3)] for _ in range(3)]
-def mostrar_tablero():
+for turno in range(9):
     for fila in tablero:
         print(" ".join(fila))
     print()
-for turno in range(9):
-    mostrar_tablero()
     jugador = "X" if turno % 2 == 0 else "O"
     fila = int(input(f"Jugador {jugador}, ingrese fila (0-2): "))
     columna = int(input(f"Jugador {jugador}, ingrese columna (0-2): "))
