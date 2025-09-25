@@ -92,3 +92,19 @@ for turno in range(9):
     else:
         print("Casilla ocupada, intente de nuevo")
         turno -= 1
+
+#Actividad 10
+ventas = [
+    [5, 3, 4, 2, 1, 3, 2],
+    [2, 4, 3, 5, 2, 3, 4],
+    [3, 5, 2, 4, 3, 2, 1],
+    [4, 2, 3, 5, 4, 3, 2]
+]
+for i, producto in enumerate(ventas, start=1):
+    print(f"Total vendido producto {i}:", sum(producto))
+totales_dia = [sum(ventas[p][d] for p in range(4)) for d in range(7)]
+dia_max = totales_dia.index(max(totales_dia)) + 1
+print("Día con mayores ventas:", dia_max)
+totales_productos = [sum(p) for p in ventas]
+producto_max = totales_productos.index(max(totales_productos)) + 1
+print("Producto más vendido:", producto_max)
