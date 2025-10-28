@@ -88,4 +88,32 @@ else:
 print("\nInventario final:")
 for producto, cantidad in stock.items():
     print(f"{producto}: {cantidad} unidades")
+#act 9
+agenda = {}
+print("Cargá tus eventos en la agenda:")
+for i in range(3):
+    dia = input("Ingrese el día: ")
+    hora = input("Ingrese la hora (por ejemplo, 14:00): ")
+    evento = input("Ingrese el evento: ")
     
+    clave = (dia, hora)  # tupla (día, hora)
+    agenda[clave] = evento
+    print()  # línea en blanco
+print("📅 Agenda completa:")
+for clave, evento in agenda.items():
+    print(f"Día: {clave[0]}, Hora: {clave[1]} → {evento}")
+print()
+dia_buscar = input("Ingrese el día a consultar: ")
+hora_buscar = input("Ingrese la hora a consultar: ")
+clave_buscar = (dia_buscar, hora_buscar)
+if clave_buscar in agenda:
+    print(f"Evento encontrado: {agenda[clave_buscar]}")
+else:
+    print("No hay eventos en ese día y hora.")
+#act 10
+paises = {"Argentina": "Buenos Aires","Chile": "Santiago","Perú": "Lima","Brasil": "Brasilia","Uruguay": "Montevideo"}
+capitales = {capital: pais for pais, capital in paises.items()}
+print("Diccionario original (País → Capital):")
+print(paises)
+print("\nDiccionario invertido (Capital → País):")
+print(capitales)
