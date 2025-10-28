@@ -33,6 +33,11 @@ def tabla_multiplicar(num):
     for i in range(1,11):
         print(f"{num} x {i} = {num * i}")
 
+#act 7
+def operaciones_basicass(a, b):
+    resul = (f"{a} + {b} ={a+b}, {a} - {b} ={a-b}, {a} * {b} ={a*b}, {a} / {b} ={a//b}")
+    return resul
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -53,3 +58,7 @@ print(f"los {segundos} ssegundos se transformaro en {segundos_a_horas(segundos)}
 
 num = int(input("ingree un numero para hacer la tabla de multiplicar "))
 tabla_multiplicar(num)
+
+a = int(input("ingrese el valor de a para las operaciones "))
+b = int(input("Ingrese el valor de b para las operaciones "))
+print(operaciones_basicass(a,b))
