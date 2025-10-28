@@ -38,3 +38,16 @@ for palabra in palabras:
 print(f"Palabras unicas:{palabras_unicas}")
 print(f"Repeticion de palabras: {repeticiones}")
 #act6
+alumnos = {}
+for i in range(3):
+    nombre = input("Ingrese el nombre del alumno: ")
+    print(f"Ingrese lass notas de {nombre}")
+    nota1 = float(input("Ingrese la primera nota: "))
+    nota2 = float(input("Ingrese la segunda nota: "))
+    nota3 = float(input("Ingrese la tercera nota: "))
+    alumnos[nombre]=(nota1,nota2,nota3)
+    print()#Linea en blanco
+print("Promedios de los alumnos:")
+for nombre, notas in alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"{nombre}: {promedio:.2f}")
