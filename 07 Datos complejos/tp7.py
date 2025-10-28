@@ -99,7 +99,7 @@ for i in range(3):
     clave = (dia, hora)  # tupla (día, hora)
     agenda[clave] = evento
     print()  # línea en blanco
-print("📅 Agenda completa:")
+print("Agenda completa:")
 for clave, evento in agenda.items():
     print(f"Día: {clave[0]}, Hora: {clave[1]} → {evento}")
 print()
