@@ -46,6 +46,10 @@ def calcular_imc(peso,altura):
 def celsius_a_fahrenheit(celsius):
     return ( celsius * 1.8) + 32
 
+#act 10
+def calcular_promedio(a, b, c):
+    return (a + b + c)/3
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -77,3 +81,8 @@ print(f"Su IMC es de {calcular_imc(peso,altura)}")
 
 temp = float(input("Ingrese la temperatura en celcius para obtener en fahrenheit "))
 print(f"Los {temp}° son {celsius_a_fahrenheit(temp)} en fahrenheit")
+
+a = int(input("ingrese el valor de a "))
+b = int(input("ingrese el valor de b "))
+c = int(input("ingrese el valor de c "))
+print(f"El promedio de los valoss a, b, c esss de {calcular_promedio(a,b,c)}")
