@@ -20,6 +20,13 @@ def calcular_area_circulos(radio):
 def calcular_perimetro_circulos(radio):
     return 2 * math.pi * radio
 
+#act 5
+def segundos_a_horas(segundos):
+    horas = segundos // 3600
+    minutos = (segundos % 3600) // 60
+    seg_rest = segundos % 60
+    return f"{horas:02}h:{minutos:02}m:{seg_rest:02}s"
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -34,3 +41,6 @@ print(info_personal(nom, apell, edad, resid))
 
 radio =int(input("Ingresse el radio del circulo "))
 print(f"El area del circulo es de {calcular_area_circulos(radio)}cm y su perimetro es de {calcular_perimetro_circulos(radio)}cm")
+
+segundos = int(input("Ingrese los segundos que se transformaran a horas "))
+print(f"los {segundos} ssegundos se transformaro en {segundos_a_horas(segundos)}")
