@@ -38,6 +38,10 @@ def operaciones_basicass(a, b):
     resul = (f"{a} + {b} ={a+b}, {a} - {b} ={a-b}, {a} * {b} ={a*b}, {a} / {b} ={a//b}")
     return resul
 
+#act 8
+def calcular_imc(peso,altura):
+    return peso / (altura ** 2)
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -62,3 +66,7 @@ tabla_multiplicar(num)
 a = int(input("ingrese el valor de a para las operaciones "))
 b = int(input("Ingrese el valor de b para las operaciones "))
 print(operaciones_basicass(a,b))
+
+peso = float(input("ingrese ssu peso para calular el IMC "))
+altura =float(input("ingrese suu altiura para el IMC "))
+print(f"Su IMC es de {calcular_imc(peso,altura)}")
