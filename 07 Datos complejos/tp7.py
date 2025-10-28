@@ -9,3 +9,18 @@ print(precios_frutas)
 precios_frutas['Banana']=1330
 precios_frutas['Manzana']=1700
 precios_frutas['Melón']=2800
+#act 3
+lista_fruta=['Banan','Anana','Melon','Uva','Manzana','Naranja','Pera']
+#act 4
+contactos = {}
+print("Ingrese 5 contactos telefonicos")
+for  i in range(5):
+    nombre = input("Ingrese el nombre del contacto")
+    numeroT =input(f"Ingrese el numero telefonico de {nombre}")
+    contactos[nombre]=numeroT
+    print() #Linea en blanco
+nombre_a_busscar = input("Ingrese el nombre de contacto a buscar: ")
+if nombre_a_busscar in contactos:
+    print(f"El contacto {nombre_a_busscar} es {contactos[nombre_a_busscar]}")
+else:
+    print(f"No se encontro ningun contacto con el nombre de {nombre_a_busscar}")
