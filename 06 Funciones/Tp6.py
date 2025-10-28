@@ -27,6 +27,12 @@ def segundos_a_horas(segundos):
     seg_rest = segundos % 60
     return f"{horas:02}h:{minutos:02}m:{seg_rest:02}s"
 
+#act 6
+def tabla_multiplicar(num):
+    print(f"Tabla de multiplicar de {num}")
+    for i in range(1,11):
+        print(f"{num} x {i} = {num * i}")
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -44,3 +50,6 @@ print(f"El area del circulo es de {calcular_area_circulos(radio)}cm y su perimet
 
 segundos = int(input("Ingrese los segundos que se transformaran a horas "))
 print(f"los {segundos} ssegundos se transformaro en {segundos_a_horas(segundos)}")
+
+num = int(input("ingree un numero para hacer la tabla de multiplicar "))
+tabla_multiplicar(num)
