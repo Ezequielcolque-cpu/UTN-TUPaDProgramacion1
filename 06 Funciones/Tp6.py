@@ -42,6 +42,10 @@ def operaciones_basicass(a, b):
 def calcular_imc(peso,altura):
     return peso / (altura ** 2)
 
+#act 9
+def celsius_a_fahrenheit(celsius):
+    return ( celsius * 1.8) + 32
+
 #main program
 print(imprimir_hola_mundo())
 
@@ -67,6 +71,9 @@ a = int(input("ingrese el valor de a para las operaciones "))
 b = int(input("Ingrese el valor de b para las operaciones "))
 print(operaciones_basicass(a,b))
 
-peso = float(input("ingrese ssu peso para calular el IMC "))
-altura =float(input("ingrese suu altiura para el IMC "))
+peso = float(input("ingrese su peso para calular el IMC "))
+altura =float(input("ingrese su altiura para calcular el IMC "))
 print(f"Su IMC es de {calcular_imc(peso,altura)}")
+
+temp = float(input("Ingrese la temperatura en celcius para obtener en fahrenheit "))
+print(f"Los {temp}° son {celsius_a_fahrenheit(temp)} en fahrenheit")
