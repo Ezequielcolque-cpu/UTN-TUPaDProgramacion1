@@ -51,3 +51,41 @@ print("Promedios de los alumnos:")
 for nombre, notas in alumnos.items():
     promedio = sum(notas) / len(notas)
     print(f"{nombre}: {promedio:.2f}")
+#act 7
+parcial1 = {"Ana", "Juan", "Pedro", "Lucía"}
+parcial2 = {"Juan", "María", "Pedro", "Sofía"}
+ambos = parcial1 & parcial2
+solo_uno = parcial1 ^ parcial2
+al_menos_uno = parcial1 | parcial2
+print("Aprobaron ambos parciales:", ambos)
+print("Aprobaron solo uno:", solo_uno)
+print("Aprobaron al menos uno:", al_menos_uno)
+#act 8
+stock ={'manzanas':10, 'peras': 6, 'naranjas': 12}
+print("Inventario actual: ")
+for producto, cantidad in stock.items():
+    print(f"{producto}:{cantidad} unidades")
+print("\n--- Conssulta / Actualizacion de Stock ---")
+producto = input("Ingrese el nombre del producto: ").lower()
+if producto in stock:
+    print(f"El stock actual de '{producto}' es {stock[producto]} unidades")
+    agregar = input("¿Desea agregar unidades a este producto? (s/n)").lower()
+    if agregar == "s":
+        cantidad = int(input("Ingrese cuantass unidades desea agregar: "))
+        stock[producto]+=cantidad
+        print(f"Nuevo stock {producto}: {stock[producto]} unidades")
+    else:
+        print("No se modifico el stock")
+else:
+    print(f"El producto '{producto}' no existe")
+    agregar_nuevo = input("¿Desea agregarlo al inventario? (s/n)").lower()
+    if agregar_nuevo == "s":
+        cantidad = int(input("Ingrese la cantidad inicial del stock: "))
+        stock[producto] = cantidad
+        print(f"Producto '{producto}' agregado con {cantidad} unidades")
+    else:
+        print("No se agregó el producto")
+print("\nInventario final:")
+for producto, cantidad in stock.items():
+    print(f"{producto}: {cantidad} unidades")
+    
