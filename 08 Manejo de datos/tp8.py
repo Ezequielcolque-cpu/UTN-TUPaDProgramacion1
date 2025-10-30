@@ -1,7 +1,7 @@
 # 1. Crear archivo inicial con productos (solo si no existe)
 import os
 
-archivo = "productos.txt"
+archivo = "08 Manejo de datos/productos.txt"
 
 if not os.path.exists(archivo):
     with open(archivo, "w", encoding="utf-8") as f:
